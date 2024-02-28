@@ -1,0 +1,288 @@
+:root {
+    --primary-color: #fd5f00;
+    --secondary-color: #ffebdf;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: "Google Sans", arial, sans-serif; */
+    background: #f5f5f5;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.sub-btn {
+    background-color: var(--primary-color);
+    padding: 17px 50px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.sub-btn:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+@media (max-width:767px) {
+    .sub-btn {
+        padding: 15px 45px;
+    }
+}
+
+
+/*  Navbar - start */
+
+nav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar .navbar-brand {
+    color: var(--primary-color);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #040404 !important;
+    margin-right: 30px;
+    transition: 0.3s all;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+@media (max-width:992px) {
+    .navbar ul {
+        align-items: start !important;
+    }
+}
+
+
+/*  Navbar - end */
+
+
+/*  Hero section - start */
+
+.hero-content h6 {
+    color: var(--primary-color);
+}
+
+.hero-content h1 {
+    color: #fff;
+}
+
+
+/*  Hero section - end */
+
+
+/* service -section -start */
+
+.service .service-item {
+    background-color: var(--secondary-color);
+    transition: all 0.4s ease;
+}
+
+.service .service-item:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-15px);
+}
+
+.service .service-item i {
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.service .service-item:hover i {
+    color: #fff;
+}
+
+
+/* .service .service-item p {
+    color: black;
+} */
+
+
+/* service -section -end */
+
+
+/* about -section -start */
+
+.about .skills i {
+    color: var(--primary-color);
+}
+
+
+/* about -section -end */
+
+
+/*  Categories -section - start */
+
+.categories .courses-item p {
+    color: var(--primary-color);
+}
+
+.categories .courses-item {
+    overflow: hidden;
+}
+
+.categories .courses-item img {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.categories .courses-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/*  Categories -section - end */
+
+
+/* Coureses -Section -start */
+
+.courses .card {
+    background: var(--secondary-color);
+    transition: all 0.4s ease;
+    border: none;
+    outline: none;
+}
+
+.courses .card .card-content {
+    overflow: hidden;
+}
+
+.courses .card .card-content img {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.courses .card:hover img {
+    transform: scale(1.1);
+}
+
+.courses .card .btn {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 13px;
+}
+
+.courses .card .card-body i {
+    color: var(--primary-color);
+}
+
+.courses .card .card-body p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
+
+/* Coureses -Section -end */
+
+
+/* Team - Section -start */
+
+.team .card {
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+}
+
+.team .card .icons {
+    background: var(--secondary-color);
+}
+
+.team .card .icons a {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+}
+
+.team .card .card-text {
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.team .card .card-content {
+    font-size: 13px;
+    color: #6b6b6b;
+}
+
+
+/* Team - Section -end */
+
+
+/* footer start */
+
+footer .btn.sumbit {
+    background: var(--primary-color);
+    color: #f5f5f5;
+}
+
+
+/* footer end */
