@@ -1,6 +1,9 @@
 :root {
-    --primary-color: #fd5f00;
-    --secondary-color: #ffebdf;
+    /* fd5f00 
+ffebdf
+*/
+    --primary-color: #1f1d55;
+    --secondary-color: #e3e3f5;
 }
 
 body {
@@ -74,10 +77,10 @@ p {
     padding: 17px 50px;
     color: #fff;
     outline: none;
-    border: none;
+    /* border: none; */
     font-size: 16px;
     border-radius: 5px;
-    transition: all 0.4s;
+    transition: 0.4s;
 }
 
 .sub-btn:hover {
@@ -91,8 +94,6 @@ p {
         padding: 15px 45px;
     }
 }
-
-
 /*  Navbar - start */
 
 nav {
@@ -104,7 +105,7 @@ nav {
 }
 
 .navbar .nav-link {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #040404 !important;
     margin-right: 30px;
@@ -120,11 +121,7 @@ nav {
         align-items: start !important;
     }
 }
-
-
 /*  Navbar - end */
-
-
 /*  Hero section - start */
 
 .hero-content h6 {
@@ -135,51 +132,129 @@ nav {
     color: #fff;
 }
 
-
+.hero-content .sub-btn:hover {
+    color: white;
+}
 /*  Hero section - end */
+/* facilities -section -start */
 
-
-/* service -section -start */
-
-.service .service-item {
+.facilities .service-item {
     background-color: var(--secondary-color);
     transition: all 0.4s ease;
 }
 
-.service .service-item:hover {
+.facilities .service-item:hover {
     background-color: var(--primary-color);
     color: #fff;
     transform: translateY(-15px);
 }
 
-.service .service-item i {
+.facilities .service-item i {
     color: var(--primary-color);
     transition: all 0.4s ease;
 }
 
-.service .service-item:hover i {
+.facilities .service-item:hover i {
     color: #fff;
 }
-
-
-/* .service .service-item p {
-    color: black;
-} */
-
-
-/* service -section -end */
-
-
+/* facilities -section -end */
 /* about -section -start */
 
 .about .skills i {
     color: var(--primary-color);
 }
-
-
 /* about -section -end */
+/* Apply Now Section- start */
 
+#apply-now {
+    background: var(--primary-color);
+}
 
+#apply-now .btn {
+    color: var(--primary-color);
+    background: white;
+    padding: 10px 30px;
+    /* border: none; */
+    outline: none;
+    transition: 0.4s;
+}
+
+#apply-now .btn:hover {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+#apply-now .btn:active {
+    color: var(--primary-color);
+    background: white;
+    border: none;
+    outline: none;
+}
+/* Apply Now Section - end */
+/* Certifications Section start */
+
+#certifications .card {
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+#certifications .card img {
+    border-radius: 10px;
+}
+
+#certifications .card .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#certifications .card .btn:hover {
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+/* Certifications Section end */
+/* events section start */
+
+.events .card {
+    cursor: pointer;
+}
+
+.events swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.events swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* events section end */
+/* services section start */
+
+#service .card {
+    background-color: transparent;
+    border: none;
+}
+/* services section end */
 /*  Categories -section - start */
 
 .categories .courses-item p {
@@ -188,6 +263,28 @@ nav {
 
 .categories .courses-item {
     overflow: hidden;
+}
+
+.categories .details a {
+    position: relative;
+}
+
+.categories .details a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    /* height: 100px; */
+    z-index: 1;
+}
+
+.categories .details .content {
+    color: white;
+    z-index: 10;
+    width: 100%;
 }
 
 .categories .courses-item img {
@@ -199,10 +296,14 @@ nav {
     transform: scale(1.1);
 }
 
-
+.categories .courses-item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 /*  Categories -section - end */
-
-
 /* Coureses -Section -start */
 
 .courses .card {
@@ -240,11 +341,7 @@ nav {
     font-weight: 400;
     color: #6b6b6b;
 }
-
-
 /* Coureses -Section -end */
-
-
 /* Team - Section -start */
 
 .team .card {
@@ -272,17 +369,11 @@ nav {
     font-size: 13px;
     color: #6b6b6b;
 }
-
-
 /* Team - Section -end */
-
-
 /* footer start */
 
 footer .btn.sumbit {
     background: var(--primary-color);
     color: #f5f5f5;
 }
-
-
 /* footer end */
