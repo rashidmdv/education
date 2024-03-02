@@ -19,9 +19,21 @@
 </head>
 
 <body>
+    <div class="nav-social sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="social-media-icons text-center">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./img/logo.png" style="width: 130px;" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" style="width: 100px;" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,12 +65,10 @@
     </nav>
 
     <section class="hero-section">
-        <div class="container-fluid mb-5">
-
-
-            <div class="row position-relative" style="min-height: 500px;">
-                <img src="./img/carousel-1.jpg" class="" alt="" style="margin: 0; padding: 0; object-fit: cover;">
-                <div class="hero-content position-absolute w-100 top-0 start-0 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+        <div class="container-fluid">
+            <div class="row position-relative">
+                <img src="./img/carousel-1.jpg" class="" alt="" style="height: 74vh; margin: 0; padding: 0; object-fit: cover;">
+                <div class="hero-content position-absolute w-100 top-0 start-0 d-flex align-items-center" style="height: 74vh; background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-8 col-sm-10">
@@ -75,8 +85,22 @@
         </div>
     </section>
 
-
-
+    <!-- Notifications -->
+    <div class="news-marquee mb-5">
+        <div class="news-conatiner">
+            <div class="group">
+                <div class="title">Notifications</div>
+                <ul class="text" style="display: flex;">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Notifications -->
 
     <!-- facilities -section -->
 
@@ -148,10 +172,10 @@
 
     <div class="categories py-4">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin: auto;">
                 <div class="text-center">
-
                     <h2 class="pt-3">Providing Colleges</h2>
+                    <p class="mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
                 </div>
                 <div class="row">
 
@@ -208,51 +232,17 @@
     <!-- Apply Now Section -->
 
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-4">
-        <div class="container">
-            <h2 class="text-center mb-4">Certifications</h2>
 
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img/certifications-1.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Certification Name</h5>
-                        <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloremque eligendi ipsam numquam ullam nisi perspiciatis et reiciendis dicta quis?</p>
-                        <a href="#" class="btn">Know More</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img/certifications-1.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Certification Name</h5>
-                        <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloremque eligendi ipsam numquam ullam nisi perspiciatis et reiciendis dicta quis?</p>
-                        <a href="#" class="btn">Know More</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img/certifications-1.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Certification Name</h5>
-                        <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime doloremque eligendi ipsam numquam ullam nisi perspiciatis et reiciendis dicta quis?</p>
-                        <a href="#" class="btn">Know More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Certifications Section -->
 
     <!-- Events section -->
     <section class="events py-4">
         <div class="container">
             <h2 class="text-center mb-4">Upcoming Events</h2>
+            <p class="mt-4 mb-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
             <div class="row mt-5">
                 <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30">
                     <swiper-slide>
-                        <div class="card mb-4">
+                        <div class="card mb-5">
                             <img src="./img/events-1.jpg" class="img-fluid" alt="Certification 1">
 
                         </div>
@@ -264,13 +254,13 @@
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div class="card mb-4">
+                        <div class="card mb-5">
                             <img src="./img/events-1.jpg" class="img-fluid" alt="Certification 1">
 
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div class="card mb-4">
+                        <div class="card mb-5">
                             <img src="./img/events-2.jpg" class="img-fluid" alt="Certification 1">
 
                         </div>
@@ -283,36 +273,50 @@
     <!-- Events section -->
 
     <!-- services section -->
-    <section id="service" class="py-4">
+    <section id="service" class="service py-4">
         <div class="container">
             <h2 class="text-center mb-4">Our Services</h2>
-
+            <p class="mt-4 mb-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
             <div class="row mt-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img//cat-2.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Services Name</h5>
-                        <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30">
+                    <swiper-slide>
 
-                    </div>
-                </div>
+                        <div class="card mb-5">
+                            <img src="./img/cat-2.jpg" class="img-fluid" alt="Certification 1">
+                            <h5 class="mt-4">Services Name</h5>
+                            <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img/cat-3.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Services Name</h5>
-                        <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
+                        </div>
 
-                    </div>
-                </div>
+                    </swiper-slide>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <img src="./img/course-2.jpg" class="img-fluid" alt="Certification 1">
-                        <h5 class="mt-4">Services Name</h5>
-                        <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
-                    </div>
-                </div>
+
+                    <swiper-slide>
+                        <div class="card mb-5">
+                            <img src="./img/cat-3.jpg" class="img-fluid" alt="Certification 1">
+                            <h5 class="mt-4">Services Name</h5>
+                            <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
+
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="card mb-5">
+                            <img src="./img/course-2.jpg" class="img-fluid" alt="Certification 1">
+                            <h5 class="mt-4">Services Name</h5>
+                            <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
+
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="card mb-5">
+                            <img src="./img/cat-2.jpg" class="img-fluid" alt="Certification 1">
+                            <h5 class="mt-4">Services Name</h5>
+                            <p class="mt-2">Tincidunt ut nulla turpis pulvinar sed proin metus, ligula nullam enim, sit ante sodales.</p>
+
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
             </div>
         </div>
     </section>
@@ -396,10 +400,10 @@
         <div class="container">
             <div class="row">
                 <div class="text-center">
-                    <h2 class="pt-3">Popular Courses</h2>
+                    <h2 class="">Popular Courses</h2>
                 </div>
 
-                <div class="row py-5">
+                <div class="row" style="margin: auto;">
                     <div class="col-lg-4 col-sm-6 mt-4">
                         <div class="card">
                             <div class="card-content position-relative">
@@ -467,9 +471,144 @@
     <!-- Coureses -Section -->
 
 
+    <!-- Testimonials section -->
+    <div id="testimonials" class="testimonials py-4">
+        <div class="container">
+            <div class="row">
+                <h5 class="text-center">Our Students Review</h5>
+                <h2 class="text-center">Storis of <span>Our Succesful</span> Students</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, similique.</p>
+                <div class="row mt-5">
+
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30">
+                        <swiper-slide>
+                            <div class="row mb-5">
+                                <div class="col-lg-5">
+                                    <div class="card">
+                                        <div class="bg-card">
+                                            <div class="user">
+                                                <img src="./img/team-4.jpg" alt="" style="width: 100%;">
+                                                <div class="details mt-3">
+                                                    <h6 class="text-center">Student Name</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-7" style="display: flex;align-items: center;">
+                                    <div>
+                                        <div class="review">
+                                            <h5>Powerful Course</h5>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <hr>
+                                            <div class="content">
+                                                <i class="fa-solid fa-quote-left"></i>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut magni culpa molestias blanditiis itaque! Perferendis dolore maxime et molestias voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="row mb-5">
+                                <div class="col-lg-5">
+                                    <div class="card">
+                                        <div class="bg-card">
+                                            <div class="user">
+                                                <img src="./img/team-4.jpg" alt="" style="width: 100%;">
+                                                <div class="details mt-3">
+                                                    <h6 class="text-center">Student Name</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-7" style="display: flex;align-items: center;">
+                                    <div>
+                                        <div class="review">
+                                            <h5>Powerful Course</h5>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <hr>
+                                            <div class="content">
+                                                <i class="fa-solid fa-quote-left"></i>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut magni culpa molestias blanditiis itaque! Perferendis dolore maxime et molestias voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials section -->
 
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Certifications</h2>
+            <p class="mt-4 mb-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
+            <div class="row mt-5" style="justify-content: center;">
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
 
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="card mb-4">
+                        <img src="./img/certificate-1.jpg" class="img-fluid" alt="Certification 1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certifications Section -->
 
 
     <!-- Footer -section -->
@@ -538,7 +677,7 @@
                         &copy; <a class="border-bottom text-white" href="#">Your Site Name</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        <!-- Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> -->
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -564,6 +703,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./marguee.js"></script>
     <script src="./script.js"></script>
 
 </body>
