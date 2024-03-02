@@ -231,9 +231,17 @@ nav {
     margin: auto;
     padding: 0;
     width: max-content;
-    animation: my-animation 30s linear infinite;
+    animation: my-animation 25s linear infinite;
 }
 
+@keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 .news-marquee .title {
     position: absolute;
     background: var(--primary-color);
