@@ -1,9 +1,9 @@
 :root {
     /* fd5f00 
-ffebdf
+    e3e3f5
 */
     --primary-color: #1f1d55;
-    --secondary-color: #e3e3f5;
+    --secondary-color: #e2f5f3;
 }
 
 body {
@@ -72,6 +72,10 @@ p {
     }
 }
 
+.swiper-pagination-bullet-active {
+    background: red !important;
+}
+
 .sub-btn {
     background-color: var(--primary-color);
     padding: 17px 50px;
@@ -94,6 +98,23 @@ p {
         padding: 15px 45px;
     }
 }
+
+
+/* social-media-icons start */
+
+.nav-social {
+    background: var(--primary-color);
+}
+
+.nav-social .social-media-icons i {
+    margin: 15px 20px;
+    color: white;
+}
+
+
+/* social-media-icons end */
+
+
 /*  Navbar - start */
 
 nav {
@@ -121,7 +142,11 @@ nav {
         align-items: start !important;
     }
 }
+
+
 /*  Navbar - end */
+
+
 /*  Hero section - start */
 
 .hero-content h6 {
@@ -135,7 +160,113 @@ nav {
 .hero-content .sub-btn:hover {
     color: white;
 }
+
+
 /*  Hero section - end */
+
+
+/* Notifications start */
+
+
+/* .news-marquee {
+    background: var(--secondary-color);
+    
+}
+
+.news-marquee .news-container {
+    display: flex;
+    align-items: center;
+}
+
+.news-marquee .news-container .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 13px 30px;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+    .news-marquee .news-container .title {
+        font-size: 15px;
+        padding: 13px 10px;
+    }
+}
+
+.news-marquee .news-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.news-marquee .news-container ul li {
+    margin: 0 30px;
+    list-style: square;
+} */
+
+.news-marquee {
+    z-index: 100;
+    background: var(--secondary-color);
+}
+
+.news-container {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.news-marquee .group {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    color: #000;
+    background: var(--secondary-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.news-marquee .text {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    animation: my-animation 30s linear infinite;
+}
+
+.news-marquee .title {
+    position: absolute;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 100;
+    border-radius: 0 40px 40px 0;
+}
+
+.news-marquee ul li {
+    margin: 0 30px;
+    list-style: square;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .news-marquee .title {
+        padding: 18px 10px;
+        font-size: 15px;
+    }
+    .news-marquee .group {
+        height: 47px;
+    }
+}
+
+
+/* Notifications end */
+
+
 /* facilities -section -start */
 
 .facilities .service-item {
@@ -157,13 +288,21 @@ nav {
 .facilities .service-item:hover i {
     color: #fff;
 }
+
+
 /* facilities -section -end */
+
+
 /* about -section -start */
 
 .about .skills i {
     color: var(--primary-color);
 }
+
+
 /* about -section -end */
+
+
 /* Apply Now Section- start */
 
 #apply-now {
@@ -191,36 +330,11 @@ nav {
     border: none;
     outline: none;
 }
+
+
 /* Apply Now Section - end */
-/* Certifications Section start */
 
-#certifications .card {
-    max-width: 400px;
-    border-radius: 10px;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border: none;
-    outline: none;
-}
 
-#certifications .card img {
-    border-radius: 10px;
-}
-
-#certifications .card .btn {
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 0;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-#certifications .card .btn:hover {
-    color: var(--primary-color);
-    background: transparent;
-    border: 1px solid var(--primary-color);
-}
-/* Certifications Section end */
 /* events section start */
 
 .events .card {
@@ -247,14 +361,22 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+
+
 /* events section end */
+
+
 /* services section start */
 
 #service .card {
     background-color: transparent;
     border: none;
 }
+
+
 /* services section end */
+
+
 /*  Categories -section - start */
 
 .categories .courses-item p {
@@ -303,7 +425,11 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+
 /*  Categories -section - end */
+
+
 /* Coureses -Section -start */
 
 .courses .card {
@@ -341,39 +467,128 @@ nav {
     font-weight: 400;
     color: #6b6b6b;
 }
+
+
 /* Coureses -Section -end */
-/* Team - Section -start */
 
-.team .card {
-    border: none;
-    outline: none;
-    background: var(--secondary-color);
-}
 
-.team .card .icons {
-    background: var(--secondary-color);
-}
+/* Testimonials section start */
 
-.team .card .icons a {
-    background: var(--primary-color);
-    border: none;
-    color: #fff;
-}
-
-.team .card .card-text {
-    font-size: 13px;
+.testimonials h2 span {
     color: var(--primary-color);
 }
 
-.team .card .card-content {
-    font-size: 13px;
-    color: #6b6b6b;
+.testimonials .card {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex-direction: row;
+    justify-content: center;
 }
-/* Team - Section -end */
+
+@media only screen and (max-width: 767px) {
+    .testimonials .card {
+        margin-left: -50px;
+    }
+}
+
+.testimonials .bg-card {
+    width: 250px;
+    height: 400px;
+    background-color: var(--primary-color);
+    position: relative;
+    border-radius: 20px;
+}
+
+.testimonials .bg-card .user {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    background: var(--secondary-color);
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials .bg-card .user {
+        left: 40%;
+    }
+}
+
+.testimonials .bg-card .user img {
+    border-radius: 20px;
+}
+
+.testimonials .review {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials .review h5 {
+    color: var(--primary-color);
+}
+
+.testimonials .review hr {
+    height: 10px;
+}
+
+.testimonials .review .stars {
+    color: var(--primary-color);
+}
+
+.testimonials .review .content i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 992px) {
+    .testimonials .review {
+        margin-top: 50px;
+    }
+}
+
+
+/* Testimonials section end */
+
+
+/* Certifications Section start */
+
+#certifications .card {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+#certifications .card img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#certifications .card .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#certifications .card .btn:hover {
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Certifications Section end */
+
+
 /* footer start */
 
 footer .btn.sumbit {
     background: var(--primary-color);
     color: #f5f5f5;
 }
+
+
 /* footer end */
