@@ -1,9 +1,9 @@
 :root {
     /* fd5f00 
-    e3e3f5
+   e2f5f3
 */
     --primary-color: #1f1d55;
-    --secondary-color: #e2f5f3;
+    --secondary-color: #dcecf9;
 }
 
 body {
@@ -646,6 +646,7 @@ nav .sub-btn:hover {
     background: var(--primary-color);
     color: white;
     padding: 50px 30px;
+    border-radius: 10px;
 }
 
 .contact .details .data {
@@ -742,30 +743,16 @@ footer .btn.sumbit {
 /* about-page start */
 
 .about-page .about-header {
-    background-image: url(./img/blog-5.jpg);
-    /* background: var(--primary-color); */
-    color: white;
-    padding: 140px 0 60px 0;
-    min-height: 30vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.about-page .about-header::before {
-    content: "";
-    background: rgba(27, 47, 69, 0.7);
-    position: absolute;
-    /* inset: 0; */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    background: var(--secondary-color);
+    padding: 50px;
 }
 
 .about-page .about-header .title {
-    color: white;
+    color: var(--primary-color);
+}
+
+.about-page .about-header .title p a {
+    color: black;
 }
 
 .about-page .why-us .about-content .content {
@@ -780,5 +767,192 @@ footer .btn.sumbit {
     margin: auto;
 }
 
+.about-page .mission-vision {
+    background: var(--secondary-color);
+}
+
+.about-page .mission-vision .mission,
+.vision {
+    padding: 0px 30px 0;
+}
+
 
 /* about-page end */
+
+
+/* college-page start */
+
+.college-page .college-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.college-page .college-header .title {
+    color: var(--primary-color);
+}
+
+.college-page .college-header .title p a {
+    color: black;
+}
+
+.college-page .colleges .card {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.college-page .colleges .card .img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.college-page .colleges .card img {
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.college-page .colleges .card img:hover {
+    transform: scale(1.1);
+}
+
+.college-page .colleges .card a {
+    color: #000;
+}
+
+.college-page .colleges .card a.more-btn {
+    display: block;
+    background: var(--primary-color);
+    color: white;
+    width: 180px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.college-page .colleges .card a.more-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* college-page end */
+
+
+/* contact-page start */
+
+.contact-page .contact-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.contact-page .contact-header .title {
+    color: var(--primary-color);
+}
+
+.contact-page .contact-header .title p a {
+    color: black;
+}
+
+.contact-page .help {
+    background: var(--secondary-color);
+}
+
+.contact-page .help .img img {
+    max-width: 550px;
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-page .help .img img {
+        width: 100%;
+    }
+}
+
+.contact-page .contact-us hr {
+    width: 100px;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 1;
+    margin: auto;
+}
+
+.contact-page .contact-us .details .data {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 30px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.contact-page .contact-us .details .data:hover {
+    box-shadow: 0 0 20px rgba(124, 136, 160, 0.25);
+    -webkit-box-shadow: 0 0 20px rgba(124, 136, 160, 0.25);
+}
+
+.contact-page .contact-us .details .data i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.contact-page .contact-form form input {
+    height: 40px;
+}
+
+.contact-page .contact-form form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-page .contact-form form input,
+textarea {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-page .contact-form form .send-btn {
+    display: block;
+    background: var(--primary-color);
+    padding: 17px 0px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+    width: 200px;
+}
+
+.contact-page .contact-form form .send-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/* contact-page end */
+
+
+/* services-page start */
+
+.services-page .services-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.services-page .services-header .title {
+    color: var(--primary-color);
+}
+
+.services-page .services-header .title p a {
+    color: black;
+}
+
+.services-page .services .service-item i {
+    color: var(--primary-color);
+}
+
+
+/* services-page end */
