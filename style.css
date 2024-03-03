@@ -72,6 +72,10 @@ p {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 .swiper-pagination-bullet-active {
     background: red !important;
 }
@@ -121,6 +125,21 @@ p {
 nav {
     background: var(--primary-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+nav .sub-btn {
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s;
+    padding: 15px 0px;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+nav .sub-btn:hover {
+    background: white;
+    color: var(--primary-color);
 }
 
 .navbar .navbar-brand {
@@ -621,6 +640,64 @@ nav {
 /* Testimonials section end */
 
 
+/*  contact section start */
+
+.contact .details {
+    background: var(--primary-color);
+    color: white;
+    padding: 50px 30px;
+}
+
+.contact .details .data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact .details .data i {
+    font-size: 25px;
+}
+
+.contact .details .data h6 {
+    margin-bottom: 0;
+}
+
+.contact form input {
+    height: 40px;
+}
+
+.contact form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact form input,
+textarea {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact form .send-btn {
+    background: var(--primary-color);
+    padding: 17px 40px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.contact form .send-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/* contact section end */
+
+
 /* Certifications Section start */
 
 #certifications .card {
@@ -660,3 +737,48 @@ footer .btn.sumbit {
 
 
 /* footer end */
+
+
+/* about-page start */
+
+.about-page .about-header {
+    background-image: url(./img/blog-5.jpg);
+    /* background: var(--primary-color); */
+    color: white;
+    padding: 140px 0 60px 0;
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-page .about-header::before {
+    content: "";
+    background: rgba(27, 47, 69, 0.7);
+    position: absolute;
+    /* inset: 0; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.about-page .about-header .title {
+    color: white;
+}
+
+.about-page .why-us .about-content .content {
+    padding: 0px 50px 0px 50px;
+}
+
+.about-page .why-us hr {
+    width: 100px;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 1;
+    margin: auto;
+}
+
+
+/* about-page end */
