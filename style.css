@@ -157,11 +157,14 @@ a {
 
 @media (max-width:767px) {
     .nav-social .contact {
-        padding: 7px;
-        font-size: 17px;
+        padding: 2px 10px;
+        font-size: 16px;
     }
     .nav-social .social-media-icons i {
         margin: 10px 1px;
+    }
+    .nav-social .contact .contact-deatils p {
+        font-size: 15px;
     }
     .nav-social .contact-deatils {
         gap: 10px !important;
