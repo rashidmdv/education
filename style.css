@@ -140,6 +140,7 @@ a {
 
 
 /* social-media-icons start */
+
 .nav-social {
     background: var(--secondary-color);
 }
@@ -156,7 +157,8 @@ a {
 
 @media (max-width:767px) {
     .nav-social .contact {
-        padding: 4px;
+        padding: 7px;
+        font-size: 17px;
     }
     .nav-social .social-media-icons i {
         margin: 10px 1px;
@@ -165,6 +167,7 @@ a {
         gap: 10px !important;
     }
 }
+
 
 /* social-media-icons end */
 
