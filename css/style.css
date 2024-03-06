@@ -1,0 +1,1319 @@
+:root {
+    /* fd5f00 
+   e2f5f3
+*/
+    --primary-color: #1f1d55;
+    --secondary-color: #dcecf9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: "Google Sans", arial, sans-serif; */
+    background: #f5f5f5;
+}
+
+
+/* aniamtion start */
+
+.topTOBottom {
+    opacity: 0;
+    transform: translatey(-100px);
+    transition: all 1.3s;
+}
+
+.leftToRight {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1.3s;
+}
+
+.bottomToTop {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.3s;
+}
+
+.rightToLeft {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1.3s;
+}
+
+.show {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+
+/* aniamtion end */
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+@media (max-width:767px) {
+    
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.swiper-pagination-bullet-active {
+    background: red !important;
+}
+
+.sub-btn {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    /* border: none; */
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.sub-btn:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+@media (max-width:767px) {
+    .sub-btn {
+        padding: 15px 45px;
+    }
+}
+
+
+/* social-media-icons start */
+
+.nav-social {
+    background: var(--secondary-color);
+}
+
+.nav-social .social-media-icons i {
+    margin: 10px 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-social .contact-deatils {
+    gap: 20px;
+}
+
+@media (max-width:767px) {
+    .nav-social .contact {
+        padding: 2px 10px;
+        font-size: 16px;
+        display: none;
+    }
+    .nav-social .social-media-icons i {
+        margin: 10px 1px;
+    }
+    .nav-social .contact .contact-deatils p {
+        font-size: 15px;
+    }
+    .nav-social .contact-deatils {
+        gap: 10px !important;
+    }
+}
+
+
+/* social-media-icons end */
+
+
+/*  Navbar - start */
+
+nav {
+    background: var(--primary-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+nav .btn {
+    display: block;
+    width: 110px;
+    padding: 7px 0;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    transition: 0.4s;
+}
+
+nav .btn:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+nav .btn.brochure {
+    color: var(--primary-color);
+    background: white;
+    border: 1px solid white;
+}
+
+nav .btn.brochure:hover {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.navbar .navbar-brand {
+    color: var(--primary-color);
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: white !important;
+    margin-right: 15px;
+    transition: 0.3s all;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+@media (max-width:992px) {
+    .navbar ul {
+        align-items: start !important;
+    }
+}
+
+
+/*  Navbar - end */
+
+
+/*  Hero section - start */
+
+.hero-section {
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    color: var(--primary-color);
+}
+
+.hero-section p {
+    color: black;
+}
+
+@media (max-width:767px) {
+    .hero-section h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .hero-section p {
+        margin-bottom: 5px !important;
+    }
+    .hero-section .button {
+        margin-bottom: 0 !important;
+    }
+    .hero-section .button .sub-btn {
+        padding: 10px 20px;
+    }
+}
+
+
+/*  Hero section - end */
+
+
+/* announcement start */
+
+.news-marquee {
+    z-index: 100;
+    background: var(--secondary-color);
+}
+
+.news-container {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.news-marquee .group {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    color: #000;
+    background: var(--secondary-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.news-marquee .text {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    animation: my-animation 25s linear infinite;
+}
+
+@keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.news-marquee .title {
+    position: absolute;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 100;
+    border-radius: 0 40px 40px 0;
+}
+
+.news-marquee ul li {
+    margin: 0 30px;
+    list-style: square;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .news-marquee .title {
+        padding: 18px 10px;
+        font-size: 15px;
+    }
+    .news-marquee .group {
+        height: 47px;
+    }
+}
+
+
+/* announcement end */
+
+
+/* facilities -section -start */
+
+.facilities .service-item {
+    background-color: var(--secondary-color);
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.facilities .service-item:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-15px);
+}
+
+.facilities .service-item i {
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.facilities .service-item:hover i {
+    color: #fff;
+}
+
+
+/* facilities -section -end */
+
+
+/* about -section -start */
+
+.about .skills i {
+    color: var(--primary-color);
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+
+/* about -section -end */
+
+
+/*  Categories -section - start */
+
+.categories .courses-item p {
+    color: var(--primary-color);
+}
+
+.categories .courses-item {
+    overflow: hidden;
+}
+
+.categories .details a {
+    position: relative;
+    border-radius: 10px;
+}
+
+.categories .details a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.categories .details .content {
+    color: white;
+    z-index: 10;
+    width: 100%;
+}
+
+.categories .courses-item img {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.categories .courses-item:hover img {
+    transform: scale(1.1);
+}
+
+.categories .courses-item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/*  Categories -section - end */
+
+
+/* Apply Now Section- start */
+
+#apply-now {
+    background: var(--primary-color);
+}
+
+#apply-now .sub-btn {
+    color: var(--primary-color);
+    background: white;
+    outline: none;
+    transition: 0.4s;
+}
+
+#apply-now .sub-btn:hover {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+#apply-now .sub-btn:active {
+    color: var(--primary-color);
+    background: white;
+    border: none;
+    outline: none;
+}
+
+
+/* Apply Now Section - end */
+
+
+/*  events-notifications start */
+
+
+/*   Notifications  start*/
+
+@media only screen and (min-width: 767px) {
+    .events-notifications .notifications {
+        margin-top: 50px !important;
+    }
+}
+
+.events-notifications .notifications .notifications-wrap .title {
+    color: white;
+    background: var(--primary-color);
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.events-notifications .notifications .notifications-wrap marquee {
+    background: var(--secondary-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.events-notifications .notifications .notifications-wrap marquee ul {
+    margin: 0px 10px 0px 20px !important;
+    padding: 0px;
+}
+
+.events-notifications .notifications .notifications-wrap marquee li {
+    margin-top: 15px;
+}
+
+
+/*   Notifications  end */
+
+
+/* events section start */
+
+.events-notifications .events .card {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.events-notifications .events .card img {
+    border-radius: 10px;
+    transition: 0.4s all;
+    transform: scale(1);
+}
+
+.events-notifications .events .card img:hover {
+    transform: scale(1.1);
+}
+
+.events-notifications .events swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.events-notifications .events swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-notifications .events swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* events section end */
+
+
+/*   events-notifications  end */
+
+
+/* services section start */
+
+#service .card {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#service .card-img {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+#service .card .card-img img {
+    border-radius: 10px 10px 0 0;
+    transition: 0.4s;
+}
+
+#service .card .card-img img:hover {
+    transform: scale(1.1);
+}
+
+
+/* services section end */
+
+
+/* counter-section start */
+
+.counter-section {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 100px 100px;
+    margin: 10px 100px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .counter-section {
+        border-radius: 80px 80px;
+        margin: 10px 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .counter-section {
+        margin: 10px 30px;
+    }
+}
+
+
+/* counter-section end */
+
+
+/* Coureses -Section -start */
+
+.courses .card {
+    background: var(--secondary-color);
+    transition: all 0.4s ease;
+    border: none;
+    outline: none;
+}
+
+.courses .card .card-content {
+    overflow: hidden;
+}
+
+.courses .card .card-content img {
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+.courses .card:hover img {
+    transform: scale(1.1);
+}
+
+.courses .card .btn {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 13px;
+}
+
+.courses .card .card-body i {
+    color: var(--primary-color);
+}
+
+.courses .card .card-body p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
+
+/* Coureses -Section -end */
+
+
+/* Testimonials section start */
+
+.testimonials h2 span {
+    color: var(--primary-color);
+}
+
+.testimonials .card {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials .card {
+        margin-left: -50px;
+    }
+}
+
+.testimonials .bg-card {
+    width: 250px;
+    height: 400px;
+    background-color: var(--primary-color);
+    position: relative;
+    border-radius: 20px;
+}
+
+.testimonials .bg-card .user {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    background: var(--secondary-color);
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonials .bg-card .user {
+        left: 40%;
+    }
+}
+
+.testimonials .bg-card .user img {
+    border-radius: 20px;
+}
+
+.testimonials .review {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials .review h5 {
+    color: var(--primary-color);
+}
+
+.testimonials .review hr {
+    height: 10px;
+}
+
+.testimonials .review .stars {
+    color: var(--primary-color);
+}
+
+.testimonials .review .content i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 992px) {
+    .testimonials .review {
+        margin-top: 50px;
+    }
+}
+
+
+/* Testimonials section end */
+
+
+/*  contact section start */
+
+.contact .details {
+    background: var(--primary-color);
+    color: white;
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.contact .details .data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact .details .data i {
+    font-size: 25px;
+}
+
+.contact .details .data h6 {
+    margin-bottom: 0;
+}
+
+.contact form input {
+    height: 40px;
+}
+
+.contact form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact form input,
+textarea {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* contact section end */
+
+
+/* Certifications Section start */
+
+#certifications .card {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+#certifications .card img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#certifications .card .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#certifications .card .btn:hover {
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Certifications Section end */
+
+
+/* footer start */
+
+footer .btn.sumbit {
+    background: var(--primary-color);
+    color: #f5f5f5;
+}
+
+footer .btn {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+footer .btn:hover {
+    color: rgb(147, 205, 224);
+}
+
+footer .btn:active {
+    border: none;
+    outline: none;
+}
+
+footer .social-meadia {
+    padding: 10px;
+    gap: 20px;
+}
+
+footer .social-meadia .btn-outline-light:hover {
+    background-color: transparent;
+    color: rgb(147, 205, 224);
+    border: none;
+    outline: none;
+}
+
+footer .social-meadia .btn-outline-light:active {
+    border: none;
+    outline: none;
+}
+
+
+/* footer end */
+
+
+/* about-page start */
+
+.about-page .about-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.about-page .about-header .title {
+    color: var(--primary-color);
+}
+
+.about-page .about-header .title p a {
+    color: black;
+}
+
+.about-page .why-us .about-content .content {
+    padding: 0px 50px 0px 50px;
+}
+
+.about-page .why-us hr {
+    width: 100px;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 1;
+    margin: auto;
+}
+
+.about-page .mission-vision {
+    background: var(--secondary-color);
+}
+
+.about-page .mission-vision .mission,
+.vision {
+    padding: 0px 30px 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .about-page .why-us .about-content .content {
+        padding: 0px 20px 0px 20px;
+    }
+    .about-page .mission-vision .mission,
+    .vision {
+        padding: 0 20px;
+    }
+}
+
+
+/* about-page end */
+
+
+/* college-page start */
+
+.college-page .college-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.college-page .college-header .title {
+    color: var(--primary-color);
+}
+
+.college-page .college-header .title p a {
+    color: black;
+}
+
+.college-page .colleges .card {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.college-page .colleges .card .img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.college-page .colleges .card img {
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.college-page .colleges .card img:hover {
+    transform: scale(1.1);
+}
+
+.college-page .colleges .card a {
+    color: #000;
+}
+
+.college-page .colleges .card a.more-btn {
+    display: block;
+    background: var(--primary-color);
+    color: white;
+    width: 180px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.college-page .colleges .card a.more-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* college-page end */
+
+
+/* contact-page start */
+
+.contact-page .contact-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.contact-page .contact-header .title {
+    color: var(--primary-color);
+}
+
+.contact-page .contact-header .title p a {
+    color: black;
+}
+
+.contact-page .help {
+    background: var(--secondary-color);
+}
+
+.contact-page .help .img img {
+    max-width: 550px;
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-page .help .img img {
+        width: 100%;
+    }
+}
+
+.contact-page .contact-us hr {
+    width: 100px;
+    height: 5px;
+    background: var(--primary-color);
+    opacity: 1;
+    margin: auto;
+}
+
+.contact-page .contact-us .details .data {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 30px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.contact-page .contact-us .details .data:hover {
+    box-shadow: 0 0 20px rgba(124, 136, 160, 0.25);
+    -webkit-box-shadow: 0 0 20px rgba(124, 136, 160, 0.25);
+}
+
+.contact-page .contact-us .details .data i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.contact-page .contact-form form input {
+    height: 40px;
+}
+
+.contact-page .contact-form form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact-page .contact-form form input,
+textarea {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-page .contact-form form .send-btn {
+    display: block;
+    background: var(--primary-color);
+    padding: 17px 0px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+    width: 200px;
+}
+
+.contact-page .contact-form form .send-btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/* contact-page end */
+
+
+/* services-page start */
+
+.services-page .services-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.services-page .services-header .title {
+    color: var(--primary-color);
+}
+
+.services-page .services-header .title p a {
+    color: black;
+}
+
+.services-page .services .service-item i {
+    color: var(--primary-color);
+}
+
+.services-page .services .img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.services-page .services img {
+    transition: 0.4s;
+}
+
+.services-page .services img:hover {
+    transform: scale(1.1);
+}
+
+.services-page .services .card {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+/* services-page end */
+
+
+/* collegeDetails-page start*/
+
+.collegeDetails-page .collegeDetails-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.collegeDetails-page .collegeDetails-header .title {
+    color: var(--primary-color);
+}
+
+.collegeDetails-page .collegeDetails-header .title p a {
+    color: black;
+}
+
+.collegeDetails-page .collegeDetails {
+    margin-top: 80px;
+}
+
+.collegeDetails-page .collegeDetails .col-2 img {
+    padding: 0;
+}
+
+.collegeDetails-page .collegeDetails .col-2 {
+    padding: 20px;
+}
+
+.collegeDetails-page .collegeDetails h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.collegeDetails-page .collegeDetails select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.collegeDetails-page .collegeDetails input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    border: 1px solid #ff523b;
+    margin-right: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.collegeDetails-page .collegeDetails .fa {
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.collegeDetails-page .collegeDetails .small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collegeDetails-page .collegeDetails .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.collegeDetails-page .program-offered {
+    background: var(--secondary-color);
+}
+
+.collegeDetails-page .program-offered hr {
+    color: var(--primary-color);
+    opacity: 1;
+    width: 100px;
+    height: 5px;
+    margin: 0 auto;
+}
+
+.collegeDetails-page .program-offered .course {
+    background: white;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.collegeDetails-page .program-offered .course i {
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+
+/* collegeDetails-page  end */
+
+
+/* events-page start */
+
+.events-page .events-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.events-page .events-header .title {
+    color: var(--primary-color);
+}
+
+.events-page .events-header .title p a {
+    color: black;
+}
+
+.events-page .events .img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.events-page .events .card {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+/* events-page end */
+
+
+/* entrance-page start */
+
+.entrance-page .entrance-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.entrance-page .entrance-header .title {
+    color: var(--primary-color);
+}
+
+.entrance-page .entrance-header .title p a {
+    color: black;
+}
+
+.entrance-page .entrance-form form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.entrance-page .entrance-form form input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.entrance-page .entrance-form .btn {
+    display: block;
+    color: white;
+    background: var(--primary-color);
+    width: 160px;
+    padding: 17px 0;
+    text-align: center;
+}
+
+
+/* entrance-page end */
+
+
+/* application-page start */
+
+.application-page .application-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.application-page .application-header .title {
+    color: var(--primary-color);
+}
+
+.application-page .application-header .title p a {
+    color: black;
+}
+
+.application-page .application-form form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.application-page .application-form form input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.application-page .application-form .btn {
+    display: block;
+    color: white;
+    background: var(--primary-color);
+    width: 160px;
+    padding: 17px 0;
+    text-align: center;
+}
+
+
+/* application-page end */
+
+
+/* serviceDetails  start */
+
+.serviceDetails-page .serviceDetails-header {
+    background: var(--secondary-color);
+    padding: 50px;
+}
+
+.serviceDetails-page .serviceDetails-header .title {
+    color: var(--primary-color);
+}
+
+.serviceDetails-page .serviceDetails-header .title p a {
+    color: black;
+}
+
+
+/* serviceDetails end */
