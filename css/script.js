@@ -4,11 +4,11 @@ const eventsSwiperEl = document.querySelector('.events swiper-container');
 const eventsSwiperParams = {
     // slidesPerView: 1,
     breakpoints: {
-        640: {
-            slidesPerView: 2,
+        767: {
+            slidesPerView: 1,
         },
-        1000: {
-            slidesPerView: 3,
+        992: {
+            slidesPerView: 2,
         },
     },
     on: {
@@ -27,7 +27,7 @@ eventsSwiperEl.initialize();
 
 
 
-// services slider
+
 
 // services slider
 const serviceSwiperEl = document.querySelector('#service swiper-container');
@@ -36,10 +36,10 @@ const serviceSwiperEl = document.querySelector('#service swiper-container');
 const serviceSwiperParams = {
 
     breakpoints: {
-        640: {
+        767: {
             slidesPerView: 2,
         },
-        1000: {
+        992: {
             slidesPerView: 3,
         },
     },
