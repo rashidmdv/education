@@ -160,7 +160,7 @@ a {
     .nav-social .contact {
         padding: 2px 10px;
         font-size: 16px;
-        display: none;
+        display: none !important;
     }
     .nav-social .social-media-icons i {
         margin: 10px 1px;
@@ -287,7 +287,7 @@ nav .btn.brochure:hover {
     height: 50px;
     overflow: hidden;
     color: #000;
-    background: var(--secondary-color);
+    background: #f3f3f3;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
@@ -346,9 +346,10 @@ nav .btn.brochure:hover {
 /* facilities -section -start */
 
 .facilities .service-item {
-    background-color: var(--secondary-color);
+    background-color: white;
     transition: all 0.4s ease;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
 .facilities .service-item:hover {

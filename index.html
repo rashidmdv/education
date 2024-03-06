@@ -44,7 +44,8 @@
                         <a target="_blank" href="https://wa.me/+919380341638"><i style="color: #1f1d55;"
                                 class="fab fa-whatsapp"></i></a>
 
-                        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a style="color: #1f1d55;" target="_blank" href="#"><i style="color: #1f1d55;"
+                                class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,7 +53,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./img/logo.png" style="width: 100px;" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" style="width: 139px;" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -89,9 +90,36 @@
         </div>
     </nav>
 
+    <style>
+        .hero-section1 {
+            max-width: 100%;
+            /* Ensures the section doesn't exceed the width of its container */
+            width: 100%;
+            /* Makes sure the section takes up the full width of its container */
+            padding: 0;
+            /* Removes any default padding */
+            margin: 0;
+            /* Removes any default margin */
+        }
+
+        .hero-section1 img {
+            max-width: 100%;
+            /* Ensures the image doesn't exceed the width of its container */
+            height: auto;
+            /* Allows the image's height to adjust proportionally to its width */
+            display: block;
+            /* Ensures the image behaves as a block element */
+            margin: 0 auto;
+            /* Centers the image horizontally */
+        }
+    </style>
+    <section class="hero-section1">
+        <img src="/img/banner.jpg" alt="banner">
+
+    </section>
 
 
-    <section style="background-color: red;" class="hero-section">
+    <!-- <section  class="hero-section">
         <div class="container">
             <div class="row justify-content-start align-items-center" style="height: 70vh;">
                 <div class="col-md-6 col-sm-10 align-items-end">
@@ -114,8 +142,7 @@
             </div>
         </div>
 
-
-    </section>
+    </section> -->
 
     <!--  announcement -->
     <div class="news-marquee mb-5">
@@ -136,7 +163,7 @@
 
     <!-- facilities -section -->
 
-    <div class="facilities py-4">
+    <div style="padding-top: 0px !important;" class="facilities py-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 my-3 bottomToTop">
@@ -181,7 +208,8 @@
             <div class="row">
                 <div class="col-lg-6 p-2 leftToRight">
                     <div class="position-relative">
-                        <img src="./img/cat-4.jpg" style="width: 550px;" class="img-fluid" alt="">
+                        <img src="./img/cat-4.jpg" style="width: 550px;height:376px !important;" class="img-fluid"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 py-2 col-sm-py-5">
@@ -214,8 +242,7 @@
 
             <div class="text-center leftToRight">
                 <h2 class="pt-3">Providing Colleges</h2>
-                <p class="mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione reprehenderit,
-                    atque quis debitis dolor ut consectetur</p>
+                <p class="mt-4 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit atque </p>
             </div>
             <div class="row">
 
@@ -312,7 +339,7 @@
                         <div class="container">
                             <h2 class="text-center mb-4 topTOBottom">Upcoming Events</h2>
                             <p class="mt-4 mb-3 text-center topTOBottom">Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
+                                adipisicing elit atque</p>
                             <div class="mt-5 bottomToTop">
                                 <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"
                                     space-between="30">
@@ -365,8 +392,8 @@
     <section id="service" class="service py-4">
         <div class="container">
             <h2 class="text-center mb-4 leftToRight">Our Services</h2>
-            <p class="mt-4 mb-3 text-center leftToRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
+            <p class="mt-4 mb-3 text-center leftToRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit atque
+            </p>
             <div class="row pt-5 bottomToTop">
                 <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30">
                     <swiper-slide>
@@ -496,6 +523,8 @@
             <div class="row">
                 <div class="text-center topTOBottom">
                     <h2 class="">Popular Courses</h2>
+                    <p class="mb-4">Take the first step towards your future. Apply now to join our educational
+                        community!</p>
                 </div>
 
                 <div class="row" style="margin: auto;">
@@ -583,7 +612,7 @@
         <div class="container">
             <h5 class="text-center topTOBottom">Our Students Review</h5>
             <h2 class="text-center leftToRight">Storis of <span>Our Succesful</span> Students</h2>
-            <p class="text-center bottomToTop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, similique.
+            <!-- <p class="text-center bottomToTop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, similique. -->
             </p>
             <div class="row mt-5 bottomToTop">
 
@@ -740,9 +769,9 @@
     <!-- Certifications Section -->
     <section id="certifications" class="py-4">
         <div class="container">
-            <h2 class="text-center mb-4 topTOBottom">Certifications</h2>
+            <!-- <h2 class="text-center mb-4 topTOBottom">Certifications</h2>
             <p class="mt-4 mb-3 text-center topTOBottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione reprehenderit, atque quis debitis dolor ut consectetur</p>
+                Ratione reprehenderit, atque quis debitis dolor ut consectetur</p> -->
             <div class="row mt-5" style="justify-content: center;">
                 <div class="col-lg-2 col-md-3 col-6 bottomToTop">
                     <div class="card mb-4">
