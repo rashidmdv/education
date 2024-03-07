@@ -92,6 +92,46 @@ testimonialsSwiperEl.initialize();
 
 
 
+
+// video slider
+const videoSwiperEl = document.querySelector('#videos swiper-container');
+
+
+const videoSwiperParams = {
+    autoplay: 5000,
+    speed: 800,
+
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
+    on: {
+        init() {
+            // ...
+        },
+    },
+};
+
+
+
+
+
+
+Object.assign(videoSwiperEl, videoSwiperParams);
+videoSwiperEl.initialize();
+
+
+
+// video slider
+
+
+
+
+
 /*--    
     Counter Up
   -----------------------------------*/
