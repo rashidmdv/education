@@ -1,14 +1,10 @@
 :root {
-    /* fd5f00 
-   e2f5f3
-*/
     --primary-color: #1f1d55;
     --secondary-color: #dcecf9;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* font-family: "Google Sans", arial, sans-serif; */
     background: #f5f5f5;
 }
 
@@ -218,18 +214,65 @@ nav .btn.brochure:hover {
     font-size: 16px;
     font-weight: 600;
     color: white !important;
-    margin-right: 15px;
+    margin-right: 10px;
     transition: 0.3s all;
-}
-
-.navbar .nav-link:hover {
-    color: var(--secondary-color) !important;
 }
 
 @media (max-width:992px) {
     .navbar ul {
         align-items: start !important;
     }
+}
+
+.navbar li {
+    transition: 0.4s;
+}
+
+.navbar li:hover a {
+    border-bottom: 1px solid white;
+}
+
+.navbar .dropdown .dropdown-menu {
+    display: none;
+    background: white;
+    color: var(--primary-color);
+    padding: 0 !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    top: 40px;
+    left: -20px;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown .dropdown-menu a {
+    color: var(--primary-color) !important;
+}
+
+.navbar .dropdown .dropdown-menu .nav-link {
+    margin-right: 0;
+}
+
+.navbar .dropdown .dropdown-menu .nav-item {
+    transition: 0.4s;
+    border-bottom: none;
+}
+
+.navbar .dropdown .dropdown-menu .nav-item:hover {
+    background: var(--primary-color);
+}
+
+.navbar .dropdown .dropdown-menu .nav-item a {
+    border-bottom: none;
+}
+
+.navbar .dropdown .dropdown-menu .nav-item:hover a {
+    color: white !important;
+    border-bottom: none;
 }
 
 
@@ -644,6 +687,33 @@ nav .btn.brochure:hover {
 /* Coureses -Section -end */
 
 
+/* videos section start */
+
+#videos .card {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#videos .video {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#videos .card .video iframe {
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#videos .card .video img:hover {
+    transform: scale(1.1);
+}
+
+
+/* videos section end */
+
+
 /* Testimonials section start */
 
 .testimonials h2 span {
@@ -846,20 +916,26 @@ footer .social-meadia .btn-outline-light:active {
 /* footer end */
 
 
-/* about-page start */
+/* page header start */
 
-.about-page .about-header {
+.page-header {
     background: var(--secondary-color);
     padding: 50px;
 }
 
-.about-page .about-header .title {
+.page-header .title {
     color: var(--primary-color);
 }
 
-.about-page .about-header .title p a {
+.page-header .title p a {
     color: black;
 }
+
+
+/* page header end */
+
+
+/* about-page start */
 
 .about-page .why-us .about-content .content {
     padding: 0px 50px 0px 50px;
@@ -897,19 +973,6 @@ footer .social-meadia .btn-outline-light:active {
 
 
 /* college-page start */
-
-.college-page .college-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.college-page .college-header .title {
-    color: var(--primary-color);
-}
-
-.college-page .college-header .title p a {
-    color: black;
-}
 
 .college-page .colleges .card {
     background: transparent;
@@ -958,19 +1021,6 @@ footer .social-meadia .btn-outline-light:active {
 
 
 /* contact-page start */
-
-.contact-page .contact-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.contact-page .contact-header .title {
-    color: var(--primary-color);
-}
-
-.contact-page .contact-header .title p a {
-    color: black;
-}
 
 .contact-page .help {
     background: var(--secondary-color);
@@ -1053,19 +1103,6 @@ textarea {
 
 /* services-page start */
 
-.services-page .services-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.services-page .services-header .title {
-    color: var(--primary-color);
-}
-
-.services-page .services-header .title p a {
-    color: black;
-}
-
 .services-page .services .service-item i {
     color: var(--primary-color);
 }
@@ -1094,19 +1131,6 @@ textarea {
 
 
 /* collegeDetails-page start*/
-
-.collegeDetails-page .collegeDetails-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.collegeDetails-page .collegeDetails-header .title {
-    color: var(--primary-color);
-}
-
-.collegeDetails-page .collegeDetails-header .title p a {
-    color: black;
-}
 
 .collegeDetails-page .collegeDetails {
     margin-top: 80px;
@@ -1190,19 +1214,6 @@ input:focus {
 
 /* events-page start */
 
-.events-page .events-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.events-page .events-header .title {
-    color: var(--primary-color);
-}
-
-.events-page .events-header .title p a {
-    color: black;
-}
-
 .events-page .events .img {
     overflow: hidden;
     border-radius: 10px;
@@ -1218,27 +1229,14 @@ input:focus {
 /* events-page end */
 
 
-/* entrance-page start */
+/* entrance-register-page start */
 
-.entrance-page .entrance-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.entrance-page .entrance-header .title {
-    color: var(--primary-color);
-}
-
-.entrance-page .entrance-header .title p a {
-    color: black;
-}
-
-.entrance-page .entrance-form form {
+.entrance-register-page .entrance-form form {
     max-width: 800px;
     margin: auto;
 }
 
-.entrance-page .entrance-form form input,
+.entrance-register-page .entrance-form form input,
 select,
 textarea {
     width: 100%;
@@ -1248,7 +1246,7 @@ textarea {
     border-bottom: 1px solid #ccc;
 }
 
-.entrance-page .entrance-form .btn {
+.entrance-register-page .entrance-form .btn {
     display: block;
     color: white;
     background: var(--primary-color);
@@ -1258,23 +1256,10 @@ textarea {
 }
 
 
-/* entrance-page end */
+/* entrance-register-page end */
 
 
 /* application-page start */
-
-.application-page .application-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.application-page .application-header .title {
-    color: var(--primary-color);
-}
-
-.application-page .application-header .title p a {
-    color: black;
-}
 
 .application-page .application-form form {
     max-width: 800px;
@@ -1306,18 +1291,73 @@ textarea {
 
 /* serviceDetails  start */
 
-.serviceDetails-page .serviceDetails-header {
-    background: var(--secondary-color);
-    padding: 50px;
-}
-
-.serviceDetails-page .serviceDetails-header .title {
-    color: var(--primary-color);
-}
-
-.serviceDetails-page .serviceDetails-header .title p a {
-    color: black;
-}
-
 
 /* serviceDetails end */
+
+
+/* videoMaterial page  start */
+
+.videoMaterial-page .videos .card {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.videoMaterial-page .videos .card iframe {
+    border-radius: 10px;
+    height: 250px !important;
+    width: 100% !important;
+}
+
+
+/* videoMaterial page end */
+
+
+/* pdfMaterial page start */
+
+.pdfMaterial-page .pdfMaterial .card {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.pdfMaterial-page .pdfMaterial .card .title {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.pdfMaterial-page .pdfMaterial .card .img {
+    background: #e6ebef;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pdfMaterial-page .pdfMaterial .card .img img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+
+/* pdfMaterial page end */
+
+
+/* entrance-exam page start */
+
+.entrance-exam-page .card {
+    margin: 20px 0 !important;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.10) !important;
+}
+
+.entrance-exam-page .card ul li {
+    border: none;
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* entrance-exam page end */
