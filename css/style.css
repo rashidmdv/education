@@ -105,6 +105,16 @@ p {
 
 a {
     text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+button:focus,
+a:focus {
+    box-shadow: none !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -113,7 +123,7 @@ a {
 
 .sub-btn {
     background-color: var(--primary-color);
-    padding: 10px 11px;
+    padding: 10px 15px;
     color: #fff;
     outline: none;
     /* border: none; */
@@ -189,6 +199,20 @@ nav .btn {
     transition: 0.4s;
 }
 
+@media (max-width:992px) {
+    nav .navbar-collapse {
+        margin-top: 10px;
+    }
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 nav .btn:hover {
     background: white;
     color: var(--primary-color);
@@ -243,6 +267,15 @@ nav .btn.brochure:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     top: 40px;
     left: -20px;
+}
+
+@media (max-width:992px) {
+    .navbar li:hover a {
+        border-bottom: none;
+    }
+    .navbar .dropdown .dropdown-menu li {
+        padding: 0 10px;
+    }
 }
 
 .navbar .nav-item.dropdown:hover .dropdown-menu {
@@ -1359,5 +1392,62 @@ textarea {
     gap: 10px;
 }
 
+.entrance-exam-page .entrance-exam-form form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.entrance-exam-page .entrance-exam-form form input,
+select,
+textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.entrance-exam-page .entrance-exam-form .btn {
+    display: block;
+    color: white;
+    background: var(--primary-color);
+    width: 160px;
+    padding: 17px 0;
+    text-align: center;
+}
+
 
 /* entrance-exam page end */
+
+
+/* courses Deatails page */
+
+.courseDetail-page .courseDetails img {
+    border-radius: 10px;
+}
+
+.courseDetail-page .courseDetails .card {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.courseDetail-page .courseDetails .card .title {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+
+/* .courseDetail-page .courseDetails .card .img {
+    background: #e6ebef;
+    border-radius: 10px;
+    padding: 0px;
+} */
+
+.courseDetail-page .courseDetails .card .img img {
+    width: 100%;
+}
+
+
+/* courses Deatails page */
